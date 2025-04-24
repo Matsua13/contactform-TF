@@ -1,0 +1,134 @@
+/* Styles pour le formulaire rétro game (Street Fighter inspiré) - Thème Futuriste (Couleurs Uniquement) */
+body {
+    font-family: 'Press Start 2P', cursive; /* Police de caractères rétro */
+    background-color: #000; /* Fond noir profond */
+    color: #00f2ff; /* Cyan vif - texte principal futuriste */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.retro-container {
+    background-color: #1e1e1e; /* Gris foncé - boîtier technologique */
+    padding: 30px;
+    border: 4px dashed #ff00ff; /* Magenta éclatant - bordure néon */
+    border-radius: 10px;
+    box-shadow: 4px 4px #00bfff; /* Bleu clair électrique - ombre lumineuse */
+}
+
+.retro-title {
+    font-size: 1.5rem;
+    color: #ff00ff; /* Titre magenta */
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px #00bfff; /* Ombre bleu clair */
+}
+
+.contact-form.retro {
+    max-width: 400px;
+    padding: 20px;
+}
+
+.contact-form.retro .form-group {
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.retro-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #00bfff; /* Labels bleu clair */
+    text-shadow: 1px 1px #000;
+}
+
+.contact-form.retro input[type="text"],
+.contact-form.retro input[type="email"],
+.contact-form.retro textarea {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #333; /* Gris foncé - circuits */
+    border-radius: 5px;
+    font-size: 1rem;
+    line-height: 1.5;
+    box-sizing: border-box;
+    background-color: #2a2a2a; /* Gris très foncé - fond des champs */
+    color: #f0f0f0; /* Gris clair - texte des champs */
+    text-shadow: 1px 1px #000;
+}
+
+.contact-form.retro input:focus,
+.contact-form.retro textarea:focus {
+    outline: none;
+    border-color: #00f2ff; /* Bordure cyan au focus */
+    box-shadow: 2px 2px #ff00ff; /* Ombre magenta au focus */
+    background-color: #333;
+}
+
+.contact-form.retro textarea {
+    resize: vertical;
+}
+
+.retro-button {
+    background-color: #00bfff; /* Bouton bleu clair - "Activer" */
+    color: #000; /* Texte noir pour contraste */
+    padding: 0.75rem 1.5rem;
+    border: 2px solid #0080ff; /* Bleu plus foncé - intensité */
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    text-shadow: 1px 1px #000;
+    box-shadow: 2px 2px #ff00ff; /* Ombre magenta */
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, transform 0.2s ease-in-out;
+    text-align: center;
+}
+
+.retro-button:hover {
+    background-color: #0080ff; /* Bleu plus foncé au survol */
+    box-shadow: 3px 3px #ff00ff;
+    transform: translateY(-2px);
+}
+
+.retro-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(0, 128, 255, 0.5), 4px 4px #ff00ff;
+}
+
+/* Icônes de validation (adaptées pour le style) */
+.contact-form.retro .validation-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    opacity: 0.8;
+    pointer-events: none;
+    font-size: 1rem;
+    text-shadow: 1px 1px #000;
+}
+
+.contact-form.retro .validation-icon.success {
+    color: #00f2ff; /* Cyan pour le succès */
+}
+
+.contact-form.retro .validation-icon.error {
+    color: #ff00ff; /* Magenta pour l'erreur */
+}
+
+/* Style pour les champs invalides */
+.contact-form.retro input.is-invalid,
+.contact-form.retro textarea.is-invalid {
+    border-color: #ff00ff;
+    background-color: #333;
+}
+
+/* Style pour les messages d'erreur */
+.contact-form.retro .error-message {
+    color: #ff00ff;
+    font-size: 0.9rem;
+    margin-top: 0.25rem;
+    text-shadow: 1px 1px #000;
+}

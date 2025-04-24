@@ -1,0 +1,104 @@
+/* Thème sombre MODERNE ET ÉLÉGANT pour le formulaire moderne */
+.contact-form.modern {
+    max-width: 450px;
+    margin: 2rem auto;
+    padding: 3rem;
+    background-color: #222; /* Fond noir subtil */
+    border: 1px solid #444; /* Bordure gris foncé discrète */
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Ombre plus profonde et douce */
+}
+
+.contact-form.modern .form-group {
+    margin-bottom: 2.5rem;
+    position: relative; /* Pour positionner les icônes de validation */
+}
+
+.contact-form.modern label {
+    display: block;
+    margin-bottom: 0.7rem;
+    font-weight: 500; /* Légèrement moins gras pour l'élégance */
+    color: #eee; /* Texte blanc doux */
+    transition: color 0.3s ease-in-out;
+}
+
+.contact-form.modern input[type="text"],
+.contact-form.modern input[type="email"],
+.contact-form.modern input[type="tel"],
+.contact-form.modern textarea {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #666; /* Bordure gris moyen */
+    border-radius: 5px;
+    font-size: 1rem;
+    line-height: 1.6;
+    box-sizing: border-box;
+    background-color: #333; /* Fond des champs gris foncé */
+    color: #f0f0f0; /* Texte gris clair */
+    transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.contact-form.modern input:focus,
+.contact-form.modern textarea:focus {
+    outline: none;
+    border-color: #8ab4f8; /* Bleu clair élégant pour le focus */
+    box-shadow: 0 0 8px rgba(138, 180, 248, 0.6); /* Ombre de focus subtile et moderne */
+    background-color: #444; /* Fond légèrement plus clair au focus */
+    color: #f0f0f0;
+}
+
+.contact-form.modern textarea {
+    resize: vertical;
+}
+
+.contact-form.modern button[type="submit"] {
+    background-color: #5c6bc0; /* Indigo élégant */
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.contact-form.modern button[type="submit"]:hover {
+    background-color: #3f51b5; /* Indigo plus foncé au survol */
+    transform: translateY(-2px); /* Légère élévation au survol */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); /* Ombre au survol pour plus de profondeur */
+}
+
+/* Icônes de validation */
+.contact-form.modern .validation-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none; /* Empêche l'icône d'interférer avec les clics */
+}
+
+.contact-form.modern .validation-icon.success {
+    color: #aed581; /* Vert clair élégant */
+}
+
+.contact-form.modern .validation-icon.error {
+    color: #ef9a9a; /* Rouge clair élégant */
+}
+
+/* Style pour les champs invalides */
+.contact-form.modern input.is-invalid,
+.contact-form.modern textarea.is-invalid {
+    border-color: #e57373; /* Rouge plus soutenu pour l'erreur */
+    background-color: #444;
+    color: #f0f0f0;
+}
+
+/* Style pour les messages d'erreur */
+.contact-form.modern .error-message {
+    color: #e57373; /* Rouge plus soutenu pour l'erreur */
+    font-size: 0.9rem;
+    margin-top: 0.25rem;
+}

@@ -1,0 +1,90 @@
+/* Thème sombre alternatif pour le formulaire minimal */
+.contact-form {
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 2.5rem; /* Augmentation légère du padding */
+    background-color: #333; /* Léger fond gris -> Fond sombre */
+    border: 1px solid #555; /* Bordure plus claire et subtile -> Bordure sombre */
+    border-radius: 8px; /* Bords plus arrondis pour une sensation plus douce */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Ombre légère pour un effet de profondeur subtil */
+}
+
+/* Groupes de champs */
+.form-group {
+    margin-bottom: 2rem; /* Augmentation de la marge pour plus d'espace */
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-bottom: 0.6rem;
+    font-weight: 500; /* Police légèrement moins grasse pour un aspect plus élégant */
+    color: #ddd; /* #444 -> Couleur de texte plus claire */
+}
+
+/* Champs de texte (input et textarea) */
+input[type="text"],
+input[type="email"],
+textarea {
+    display: block;
+    width: 100%;
+    padding: 0.8rem; /* Léger ajustement du padding */
+    border: 1px solid #777; /* #ccc -> Bordure sombre */
+    border-radius: 4px; /* Bords légèrement plus arrondis */
+    font-size: 1rem;
+    line-height: 1.6; /* Légère augmentation de la hauteur de ligne */
+    box-sizing: border-box;
+    background-color: #444; /* #f9f9f9 -> Fond sombre pour les champs */
+    color: #eee; /* Ajout de couleur de texte claire */
+    transition: border-color 0.2s ease-in-out; /* Transition pour l'effet de focus */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    outline: none; /* Supprime la bordure de focus par défaut du navigateur */
+    border-color: #64b5f6; /* #007bff -> Couleur de focus élégante (bleu clair) */
+    box-shadow: 0 0 0 0.2rem rgba(100, 181, 246, 0.5); /* Ombre de focus subtile (bleu clair) */
+    background-color: #555; /* Fond légèrement plus clair au focus */
+}
+
+/* Style spécifique pour le textarea */
+textarea {
+    resize: vertical;
+}
+
+/* Bouton d'envoi */
+button[type="submit"] {
+    background-color: #1e88e5; /* #007bff -> Bleu plus foncé */
+    color: white;
+    padding: 0.8rem 1.6rem; /* Léger ajustement du padding */
+    border: none;
+    border-radius: 6px; /* Bords légèrement plus arrondis */
+    font-size: 1.05rem; /* Légère augmentation de la taille de la police */
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+button[type="submit"]:hover {
+    background-color: #1565c0; /* #0056b3 -> Bleu encore plus foncé */
+}
+
+button[type="submit"]:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(100, 181, 246, 0.5); /* Ombre de focus pour le bouton (bleu clair) */
+}
+
+/* Style pour les champs invalides */
+input.is-invalid,
+textarea.is-invalid {
+    border-color: #e57373; /* #dc3545 -> Couleur rouge plus claire pour l'erreur */
+    background-color: #555; /* Fond sombre pour les champs invalides */
+    color: #eee; /* Texte clair dans les champs invalides */
+}
+
+/* Style pour les messages d'erreur */
+.error-message {
+    color: #e57373; /* #dc3545 -> Texte rouge plus clair pour les erreurs */
+    font-size: 0.9rem; /* Taille de police plus petite */
+    margin-top: 0.25rem; /* Légère marge au-dessus du message */
+}

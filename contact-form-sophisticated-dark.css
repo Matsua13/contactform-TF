@@ -1,0 +1,110 @@
+/* Thème sombre SOPHISTIQUÉ ET ESTHÉTIQUE pour le formulaire sophisticated */
+.contact-form.sophisticated {
+    max-width: 420px;
+    margin: 2rem auto;
+    padding: 3rem;
+    background-color: #1e1e1e; /* Fond noir profond */
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6); /* Ombre plus marquée pour le contraste avec le fond */
+}
+
+.contact-form.sophisticated .form-group {
+    margin-bottom: 2.2rem;
+    position: relative;
+}
+
+.contact-form.sophisticated label {
+    display: block;
+    margin-bottom: 0.7rem;
+    font-weight: 500;
+    color: #dcdcdc; /* Gris clair doux */
+}
+
+.contact-form.sophisticated input[type="text"],
+.contact-form.sophisticated input[type="email"],
+.contact-form.sophisticated input[type="tel"],
+.contact-form.sophisticated textarea {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #424242; /* Gris foncé pour la bordure */
+    border-radius: 6px;
+    font-size: 1rem;
+    line-height: 1.6;
+    box-sizing: border-box;
+    background-color: #2c2c2c; /* Gris très foncé pour les champs */
+    color: #f5f5f5; /* Gris très clair pour le texte */
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.contact-form.sophisticated input:focus,
+.contact-form.sophisticated textarea:focus {
+    outline: none;
+    border-color: #64ffda; /* Cyan vif pour un accent esthétique */
+    box-shadow: 0 0 12px rgba(100, 255, 218, 0.7); /* Ombre de focus cyan */
+    background-color: #3a3a3a;
+    color: #f5f5f5;
+}
+
+.contact-form.sophisticated textarea {
+    resize: vertical;
+}
+
+.contact-form.sophisticated button[type="submit"] {
+    background-color: #a78bfa; /* Lavande plus soutenue pour le bouton */
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.contact-form.sophisticated button[type="submit"]:hover {
+    background-color: #8e70e9; /* Lavande légèrement plus foncé au survol */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    transform: translateY(-2px);
+}
+
+.contact-form.sophisticated button[type="submit"]:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(167, 139, 250, 0.5); /* Ombre de focus lavande */
+}
+
+/* Icônes de validation */
+.contact-form.sophisticated .validation-icon {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    opacity: 0;
+    pointer-events: none;
+    font-size: 1.2rem;
+}
+
+.contact-form.sophisticated .validation-icon.success {
+    color: #69f0ae; /* Vert clair vif et esthétique */
+}
+
+.contact-form.sophisticated .validation-icon.error {
+    color: #ff8a80; /* Rouge orangé esthétique */
+}
+
+/* Style pour les champs invalides */
+.contact-form.sophisticated input.is-invalid,
+.contact-form.sophisticated textarea.is-invalid {
+    border-color: #ff8a80;
+    box-shadow: 0 0 6px rgba(255, 138, 128, 0.5);
+    background-color: #3a3a3a;
+    color: #f5f5f5;
+}
+
+/* Style pour les messages d'erreur */
+.contact-form.sophisticated .error-message {
+    color: #ff8a80;
+    font-size: 0.9rem;
+    margin-top: 0.3rem;
+}

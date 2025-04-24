@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Contact Form - Documentation</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; margin: 2rem; }
+        h1, h2, h3 { color: #333; }
+        h1 { border-bottom: 2px solid #ccc; padding-bottom: 0.5rem; }
+        h2 { margin-top: 1.5rem; }
+        pre { background-color: #f4f4f4; padding: 1rem; border-radius: 5px; overflow-x: auto; }
+        code { font-family: monospace; }
+        ul { list-style-type: disc; margin-left: 2rem; }
+        strong { font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>Modern Contact Form - Documentation</h1>
+
+    <h2>Introduction</h2>
+    <p>Thank you for purchasing the Modern Contact Form! This document will guide you through the installation and usage of this stylish and functional contact form.</p>
+
+    <h2>File Structure</h2>
+    <pre><code>
+contactform-TF/
+└── documentation/
+    ├── index.html
+    ├── flat.html
+    ├── minimal.html
+    ├── modern.html
+    ├── retro.html
+    ├── sophisticated.html
+└── preview/
+    ├── <screenshot-1 class="png"></screenshot-1>
+    └── <screenshot-2 class="png"></screenshot-2>
+├── common.css
+├── contact-form-flat.html
+├── contact-form-flat.css
+├── contact-form-flat.js
+├── contact-form-minimal.html
+├── contact-form-minimal.css
+├── contact-form-minimal.js
+├── contact-form-modern.html
+├── contact-form-modern.css
+├── contact-form-modern.js
+├── contact-form-retro.html
+├── contact-form-retro.css
+├── contact-form-retro.js
+├── contact-form-sophisticated.html
+├── contact-form-sophisticated.css
+├── contact-form-sophitiscated.js
+├── README.txt
+    </code></pre>
+
+    <h2>Installation</h2>
+    <p>To install the Modern Contact Form, simply include the <code>contact-form-modern.html</code>, <code>contact-form-modern.css</code>, and <code>contact-form-modern.js</code> files in your HTML project.</p>
+
+    <h2>Usage</h2>
+    <h3>Basic Integration</h3>
+    <p>Copy the HTML code from <code>contact-form-modern.html</code> into the desired location in your website's HTML structure. Make sure to link the <code>contact-form-modern.css</code> file in the <code>&lt;head&gt;</code> section and include the <code>contact-form-modern.js</code> file before the closing <code>&lt;body&gt;</code> tag.</p>
+    <pre><code lang="html">
+&lt;head&gt;
+    &lt;link rel="stylesheet" href="path/to/contact-form-modern.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- Your content --&gt;
+    &lt;form class="contact-form modern" action="#" method="POST" novalidate&gt;
+        &lt;div class="form-group"&gt;
+            &lt;label for="name-modern"&gt;Name:&lt;/label&gt;
+            &lt;input type="text" id="name-modern" name="name" required aria-required="true" placeholder="Your name"&gt;
+            &lt;span class="validation-icon success"&gt;&lt;svg ...&gt;&lt;/svg&gt;&lt;/span&gt;
+            &lt;span class="validation-icon error"&gt;&lt;svg ...&gt;&lt;/svg&gt;&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class="form-group"&gt;
+            &lt;label for="email-modern"&gt;Email:&lt;/label&gt;
+            &lt;input type="email" id="email-modern" name="email" required aria-required="true" placeholder="Your email"&gt;
+            &lt;span class="validation-icon success"&gt;&lt;svg ...&gt;&lt;/svg&gt;&lt;/span&gt;
+            &lt;span class="validation-icon error"&gt;&lt;svg ...&gt;&lt;/svg&gt;&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class="form-group"&gt;
+            &lt;label for="message-modern"&gt;Message:&lt;/label&gt;
+            &lt;textarea id="message-modern" name="message" rows="5" required aria-required="true" placeholder="Your message"&gt;&lt;/textarea&gt;
+            &lt;span class="validation-icon success"&gt;&lt;svg ...&gt;&lt;/svg&gt;&lt;/span&gt;
+            &lt;span class="validation-icon error"&gt;&lt;svg ...&gt;&lt;/svg&gt;&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;button type="submit"&gt;Send Message&lt;/button&gt;
+    &lt;/form&gt;
+
+    &lt;script src="path/to/contact-form-modern.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+    </code></pre>
+
+    <h2>Customization</h2>
+    <p>The Modern Contact Form offers a clean and stylish design that can be easily adapted to your brand. You can customize its appearance by modifying the CSS rules in the <code>contact-form-modern.css</code> file. Here's how to adjust some key visual aspects:</p>
+
+    <h3>Colors</h3>
+    <p>Modify the following CSS properties to change the color scheme of the form:</p>
+    <ul>
+        <li><strong>Form Background Color:</strong> Change the <code>background-color</code> property of the <code>.contact-form.modern</code> class.
+            <pre><code lang="css">
+.contact-form.modern {
+    background-color: #fff; /* Default white */
+    /* For a light gray background: */
+    /* background-color: #f8f8f8; */
+}
+            </code></pre>
+        </li>
+        <li><strong>Label Text Color:</strong> Adjust the <code>color</code> property of the <code>.contact-form.modern label</code> rule.
+            <pre><code lang="css">
+.contact-form.modern label {
+    color: #333; /* Default dark gray */
+    /* For a primary brand color: */
+    /* color: #007bff; */
+}
+            </code></pre>
+        </li>
+        <li><strong>Input Field Border Color:</strong> Modify the <code>border-color</code> property in the rules for <code>.contact-form.modern input[type="text"]</code>, <code>.contact-form.modern input[type="email"]</code>, <code>.contact-form.modern input[type="tel"]</code>, and <code>.contact-form.modern textarea</code>.
+            <pre><code lang="css">
+.contact-form.modern input[type="text"],
+.contact-form.modern input[type="email"],
+.contact-form.modern input[type="tel"],
+.contact-form.modern textarea {
+    border: 1px solid #ccc; /* Default light gray */
+    /* For a more prominent border: */
+    /* border-color: #999; */
+}
+            </code></pre>
+        </li>
+        <li><strong>Button Background Color:</strong> Change the <code>background-color</code> property of the <code>.contact-form.modern button[type="submit"]</code> rule.
+            <pre><code lang="css">
+.contact-form.modern button[type="submit"] {
+    background-color: #007bff; /* Default blue */
+    /* For an accent color: */
+    /* background-color: #ffc107; */
+}
+            </code></pre>
+        </li>
+        <li><strong>Button Text Color:</strong> Modify the <code>color</code> property in the <code>.contact-form.modern button[type="submit"]</code> rule. The default is <code>white</code>.
+            <pre><code lang="css">
+.contact-form.modern button[type="submit"] {
+    color: white; /* Default white */
+    /* For dark text on a light button: */
+    /* color: #333; */
+}
+            </code></pre>
+        </li>
+        <li><strong>Hover Effects:</strong>
+            <ul>
+                <li><strong>Input Focus:</strong> Adjust the <code>border-color</code> and <code>box-shadow</code> in the rules for <code>.contact-form.modern input:focus</code> and <code>.contact-form.modern textarea:focus</code>.
+                    <pre><code lang="css">
+.contact-form.modern input:focus,
+.contact-form.modern textarea:focus {
+    border-color: #007bff; /* Default blue focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Blue focus shadow */
+    /* For a different focus style: */
+    /* border-color: #ffc107; */
+    /* box-shadow: 0 0 5px rgba(255, 193, 7, 0.5); */
+}
+                    </code></pre>
+                </li>
+                <li><strong>Button Hover:</strong> Modify the <code>background-color</code> in the <code>.contact-form.modern button[type="submit"]:hover</code> rule.
+                    <pre><code lang="css">
+.contact-form.modern button[type="submit"]:hover {
+    background-color: #0056b3; /* Default darker blue */
+    /* For a darker accent color: */
+    /* background-color: #e0a800; */
+}
+                    </code></pre>
+                </li>
+            </ul>
+        </li>
+        <li><strong>Validation Icons:</strong> Change the <code>color</code> property of the <code>.contact-form.modern .validation-icon.success</code> (default: <code>green</code>) and <code>.contact-form.modern .validation-icon.error</code> (default: <code>red</code>) rules.
+            <pre><code lang="css">
+.contact-form.modern .validation-icon.success {
+    color: green; /* Default green */
+    /* For a different success color: */
+    /* color: #28a745; */
+}
+
+.contact-form.modern .validation-icon.error {
+    color: red; /* Default red */
+    /* For a different error color: */
+    /* color: #dc3545; */
+}
+            </code></pre>
+        </li>
+        <li><strong>Invalid Field Border:</strong> Adjust the <code>border-color</code> of the <code>.contact-form.modern input.is-invalid</code> and <code>.contact-form.modern textarea.is-invalid</code> rules.
+            <pre><code lang="css">
+.contact-form.modern input.is-invalid,
+.contact-form.modern textarea.is-invalid {
+    border-color: #dc3545; /* Default red */
+    /* For a different error indication color: */
+    /* border-color: #ff0000; */
+}
+            </code></pre>
+        </li>
+        <li><strong>Error Message Text:</strong> Modify the <code>color</code> property of the <code>.contact-form.modern .error-message</code> rule.
+            <pre><code lang="css">
+.contact-form.modern .error-message {
+    color: #dc3545; /* Default red */
+    /* For a warning color: */
+    /* color: #ffc107; */
+}
+            </code></pre>
+        </li>
+    </ul>
+
+    <h3>Typography</h3>
+    <p>To change the font used in the form, modify the <code>font-family</code> property in the CSS rules for <code>.contact-form.modern label</code>, <code>.contact-form.modern input</code>, <code>.contact-form.modern textarea</code>, and <code>.contact-form.modern button</code>. Refer to the "Typography" section in the Minimal style documentation for instructions on integrating Google Fonts.</p>
+
+    <h3>Size and Spacing</h3>
+    <p>Adjust the size and spacing of the form elements by modifying properties like <code>max-width</code>, <code>padding</code>, and <code>margin</code> in the CSS rules for the respective elements (<code>.contact-form.modern</code>, <code>.contact-form.modern .form-group</code>, <code>.contact-form.modern input</code>, <code>.contact-form.modern textarea</code>, <code>.contact-form.modern button</code>). The principles are similar to those described in the Minimal style documentation.</p>
+
+    <h3>Displaying/Hiding Optional Fields</h3>
+    <p>Similar to the Minimal style, you can use the <code>.d-none</code> utility class from <code>common.css</code> to hide optional fields by adding it to the <code>.form-group</code> of the field in your HTML. Make sure <code>common.css</code> is linked in the <code>&lt;head&gt;</code> of your HTML file.</p>
+
+    <h3>Text Customization</h3>
+    <p>The text for the labels and the submit button can be directly changed within the <code>contact-form-modern.html</code> file by editing the text content of the <code>&lt;label&gt;</code> and <code>&lt;button&gt;</code> elements.</p>
+
+    <h2>Backend Integration</h2>
+    <p><strong>Important:</strong> This contact form provides the front-end structure and client-side validation only. To handle the form submission (sending emails, storing data), you will need to integrate a backend solution using a server-side language (like PHP, Node.js, Python) or a third-party service (like Formspree, Netlify Forms).</p>
+
+    <h3>Using a Backend Language (Example: PHP)</h3>
+    <p>You would typically create a PHP script to handle the form submission when the user clicks "Send Message". The <code>action</code> attribute of the <code>&lt;form&gt;</code> tag would point to this PHP script.</p>
+    <pre><code lang="html">
+&lt;form class="contact-form modern" action="process_form.php" method="POST" novalidate&gt;
+    &lt;!-- ... form fields ... --&gt;
+    &lt;button type="submit"&gt;Send Message&lt;/button&gt;
+&lt;/form&gt;
+    </code></pre>
+    <p>Your <code>process_form.php</code> file would then handle the data submitted via the <code>$_POST</code> superglobal, perform server-side validation, and send the email.</p>
+
+    <h3>Using a Third-Party Service (Example: Formspree)</h3>
+    <p><a href="https://formspree.io/" target="_blank">Formspree</a> is a service that allows you to receive emails from your HTML forms without writing any backend code.</p>
+    <ol>
+        <li>Sign up for a free account on Formspree.</li>
+        <li>Create a new form on your Formspree dashboard.</li>
+        <li>Formspree will provide you with a form endpoint URL. Update the <code>action</code> attribute of your HTML form with this URL.</li>
+    </ol>
+    <pre><code lang="html">
+&lt;form class="contact-form modern" action="https://formspree.io/f/your_form_endpoint" method="POST" novalidate&gt;
+    &lt;!-- ... form fields ... --&gt;
+    &lt;button type="submit"&gt;Send Message&lt;/button&gt;
+&lt;/form&gt;
+    </code></pre>
+    <p>Formspree can also handle basic spam protection and email notifications.</p>
+
+    <h3>Security Considerations</h3>
+    <p>Remember that client-side validation (provided by the JavaScript) is for user convenience. You <strong>must</strong> implement server-side validation to protect your website from malicious input and ensure data integrity.</p>
+
+    <h2>Internationalization (Translation)</h2>
+    <p>To translate the form labels and any potential JavaScript error messages, you will need to modify the text content directly in the <code>contact-form-modern.html</code> file for the labels and in the <code>contact-form-modern.js</code> file for the error messages.</p>
+
+    <h2>Accessibility</h2>
+    <p>This contact form is designed with accessibility in mind:</p>
+    <ul>
+        <li>Proper use of <code>&lt;label&gt;</code> elements associated with their respective inputs using the <code>for</code> attribute.</li>
+        <li>Use of <code>aria-required="true"</code> for required fields.</li>
+        <li>Sufficient color contrast for readability.</li>
+        <li>Clear focus styles for keyboard navigation (provided in the CSS).</li>
+    </ul>
+
+    <h2>Performance</h2>
+    <p>The form is lightweight and optimized for performance with minimal CSS and JavaScript.</p>
+
+    <h2>Support</h2>
+    <p>For any questions or issues, please refer to the ThemeForest support section for this item.</p>
+
+    <p>Thank you again for your purchase!</p>
+</body>
+</html>

@@ -1,0 +1,134 @@
+/* Styles pour le formulaire rétro game (Street Fighter inspiré) */
+body {
+    font-family: 'Press Start 2P', cursive; /* Police de caractères rétro - assurez-vous de l'inclure via <link> dans le <head> */
+    background-color: #222; /* Fond sombre comme une salle d'arcade */
+    color: #eee;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.retro-container {
+    background-color: #333;
+    padding: 30px;
+    border: 4px dashed #fdd835; /* Bordure jaune flashy */
+    border-radius: 10px;
+    box-shadow: 4px 4px #000; /* Ombre noire épaisse */
+}
+
+.retro-title {
+    font-size: 1.5rem;
+    color: #fdd835; /* Titre jaune */
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px #000;
+}
+
+.contact-form.retro {
+    max-width: 400px;
+    padding: 20px;
+}
+
+.contact-form.retro .form-group {
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.retro-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #f44336; /* Labels rouges */
+    text-shadow: 1px 1px #000;
+}
+
+.contact-form.retro input[type="text"],
+.contact-form.retro input[type="email"],
+.contact-form.retro textarea {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #666;
+    border-radius: 5px;
+    font-size: 1rem;
+    line-height: 1.5;
+    box-sizing: border-box;
+    background-color: #444;
+    color: #eee;
+    text-shadow: 1px 1px #000;
+}
+
+.contact-form.retro input:focus,
+.contact-form.retro textarea:focus {
+    outline: none;
+    border-color: #fdd835; /* Bordure jaune au focus */
+    box-shadow: 2px 2px #000;
+    background-color: #555;
+}
+
+.contact-form.retro textarea {
+    resize: vertical;
+}
+
+.retro-button {
+    background-color: #4caf50; /* Bouton vert "Start" */
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: 2px solid #388e3c;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    text-shadow: 1px 1px #000;
+    box-shadow: 2px 2px #000;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, transform 0.2s ease-in-out;
+    text-align: center;
+}
+
+.retro-button:hover {
+    background-color: #388e3c; /* Vert plus foncé au survol */
+    box-shadow: 3px 3px #000;
+    transform: translateY(-2px);
+}
+
+.retro-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(76, 175, 80, 0.5), 4px 4px #000;
+}
+
+/* Icônes de validation (adaptées pour le style) */
+.contact-form.retro .validation-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    opacity: 0.8;
+    pointer-events: none;
+    font-size: 1rem;
+    text-shadow: 1px 1px #000;
+}
+
+.contact-form.retro .validation-icon.success {
+    color: #fdd835; /* Jaune pour le succès */
+}
+
+.contact-form.retro .validation-icon.error {
+    color: #f44336; /* Rouge pour l'erreur */
+}
+
+/* Style pour les champs invalides */
+.contact-form.retro input.is-invalid,
+.contact-form.retro textarea.is-invalid {
+    border-color: #f44336;
+    background-color: #555;
+}
+
+/* Style pour les messages d'erreur */
+.contact-form.retro .error-message {
+    color: #f44336;
+    font-size: 0.9rem;
+    margin-top: 0.25rem;
+    text-shadow: 1px 1px #000;
+}

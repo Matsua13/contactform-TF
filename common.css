@@ -1,0 +1,5 @@
+/* Classes utilitaires communes */
+
+.d-none {
+    display: none !important; /* Utilisation de !important pour s'assurer qu'elle a la priorité */
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de Contact Flat</title>
+    <meta name="description" content="Formulaire de contact au design plat et coloré, accessible et performant.">
+    <link rel="stylesheet" href="contact-form-flat.css" id="theme-stylesheet">
+    <style>
+        /* Styles pour le sélecteur de thème */
+        .theme-selector-container {
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        #theme-select {
+            padding: 0.5rem 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        #theme-select option {
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="theme-selector-container">
+        <label for="theme-select">Choose a theme</label>
+        <select id="theme-select">
+            <option value="default">Default</option>
+            <option value="dark">Dark</option>
+        </select>
+    </div>
+
+    <form class="contact-form flat" action="#" method="POST" novalidate>
+        <div class="form-group">
+            <label for="name-flat">Nom :</label>
+            <input type="text" id="name-flat" name="name" required aria-required="true" placeholder="Votre nom">
+            <span class="validation-icon success"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg></span>
+            <span class="validation-icon error"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></span>
+        </div>
+
+        <div class="form-group">
+            <label for="email-flat">Email :</label>
+            <input type="email" id="email-flat" name="email" required aria-required="true" placeholder="Votre email">
+            <span class="validation-icon success"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg></span>
+            <span class="validation-icon error"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></span>
+        </div>
+
+        <div class="form-group">
+            <label for="subject-flat">Sujet :</label>
+            <input type="text" id="subject-flat" name="subject" required aria-required="true" placeholder="Sujet">
+            <span class="validation-icon success"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg></span>
+            <span class="validation-icon error"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></span>
+        </div>
+
+        <div class="form-group">
+            <label for="phone-flat">Téléphone (facultatif) :</label>
+            <input type="tel" id="phone-flat" name="phone" placeholder="Votre numéro de téléphone">
+            <span class="validation-icon success"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg></span>
+            <span class="validation-icon error"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></span>
+        </div>
+
+        <div class="form-group">
+            <label for="message-flat">Message :</label>
+            <textarea id="message-flat" name="message" rows="5" required aria-required="true" placeholder="Votre message"></textarea>
+            <span class="validation-icon success"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg></span>
+            <span class="validation-icon error"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></span>
+        </div>
+
+        <button type="submit">Envoyer le message</button>
+    </form>
+
+    <script src="contact-form-flat.js"></script>
+    <script>
+        const themeSelect = document.getElementById('theme-select');
+        const themeStylesheet = document.getElementById('theme-stylesheet');
+
+        themeSelect.addEventListener('change', function() {
+            const selectedTheme = this.value;
+            let themeUrl = 'contact-form-flat.css'; // Chemin par défaut
+
+            if (selectedTheme === 'dark') {
+                themeUrl = 'contact-form-flat-dark.css';
+            }
+            // Tu pourras ajouter d'autres conditions 'else if' ici pour d'autres thèmes
+
+            themeStylesheet.setAttribute('href', themeUrl);
+            localStorage.setItem('flat-theme', selectedTheme);
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedTheme = localStorage.getItem('flat-theme');
+            if (savedTheme) {
+                themeSelect.value = savedTheme;
+                let themeUrl = 'contact-form-flat.css';
+                if (savedTheme === 'dark') {
+                    themeUrl = 'contact-form-flat-dark.css';
+                }
+                themeStylesheet.setAttribute('href', themeUrl);
+            }
+        });
+    </script>
+</body>
+</html>

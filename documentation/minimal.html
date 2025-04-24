@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimal Contact Form - Documentation</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; margin: 2rem; }
+        h1, h2, h3 { color: #333; }
+        h1 { border-bottom: 2px solid #ccc; padding-bottom: 0.5rem; }
+        h2 { margin-top: 1.5rem; }
+        pre { background-color: #f4f4f4; padding: 1rem; border-radius: 5px; overflow-x: auto; }
+        code { font-family: monospace; }
+        ul { list-style-type: disc; margin-left: 2rem; }
+        strong { font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>Minimal Contact Form - Documentation</h1>
+
+    <h2>Introduction</h2>
+    <p>Thank you for purchasing the Minimal Contact Form! This document will guide you through the installation and usage of this simple, elegant, accessible, and performant contact form.</p>
+
+    <h2>File Structure</h2>
+    <pre><code>
+contactform-TF/
+└── documentation/
+    ├── index.html
+    ├── flat.html
+    ├── minimal.html
+    ├── modern.html
+    ├── retro.html
+    ├── sophisticated.html
+└── preview/
+    ├── <screenshot-1 class="png"></screenshot-1>
+    └── <screenshot-2 class="png"></screenshot-2>
+├── common.css
+├── contact-form-flat.html
+├── contact-form-flat.css
+├── contact-form-flat.js
+├── contact-form-minimal.html
+├── contact-form-minimal.css
+├── contact-form-minimal.js
+├── contact-form-modern.html
+├── contact-form-modern.css
+├── contact-form-modern.js
+├── contact-form-retro.html
+├── contact-form-retro.css
+├── contact-form-retro.js
+├── contact-form-sophisticated.html
+├── contact-form-sophisticated.css
+├── contact-form-sophitiscated.js
+├── README.txt
+    </code></pre>
+
+    <h2>Installation</h2>
+    <p>To install the Minimal Contact Form, simply include the <code>contact-form-minimal.html</code>, <code>contact-form-minimal.css</code>, and <code>contact-form-minimal.js</code> files in your HTML project.</p>
+
+    <h2>Usage</h2>
+    <h3>Basic Integration</h3>
+    <p>Copy the HTML code from <code>contact-form-minimal.html</code> into the desired location in your website's HTML structure. Make sure to link the <code>contact-form-minimal.css</code> file in the <code>&lt;head&gt;</code> section and include the <code>contact-form-minimal.js</code> file before the closing <code>&lt;body&gt;</code> tag.</p>
+    <pre><code lang="html">
+&lt;head&gt;
+    &lt;link rel="stylesheet" href="path/to/minimal-contact-form.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- Your content --&gt;
+    &lt;form class="contact-form" action="#" method="POST" novalidate&gt;
+        &lt;div class="form-group&gt;
+            &lt;label for="name"&gt;Name:&lt;/label&gt;
+            &lt;input type="text" id="name" name="name" required aria-required="true" placeholder="Your name"&gt;
+        &lt;/div&gt;
+        &lt;div class="form-group&gt;
+            &lt;label for="email"&gt;Email:&lt;/label&gt;
+            &lt;input type="email" id="email" name="email" required aria-required="true" placeholder="Your email"&gt;
+        &lt;/div&gt;
+        &lt;div class="form-group&gt;
+            &lt;label for="message"&gt;Message:&lt;/label&gt;
+            &lt;textarea id="message" name="message" rows="5" required aria-required="true" placeholder="Your message"&gt;&lt;/textarea&gt;
+        &lt;/div&gt;
+        &lt;button type="submit"&gt;Send Message&lt;/button&gt;
+    &lt;/form&gt;
+
+    &lt;script src="path/to/minimal-contact-form.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+    </code></pre>
+
+    <h2>Customization</h2>
+    <p>You can easily customize the appearance of the form by modifying the CSS rules in the <code>minimal-contact-form.css</code> file. The CSS is well-structured with comments to help you identify different sections and elements.</p>
+
+    <h3>Colors</h3>
+    <p>To change the colors of the form elements, modify the following CSS properties in <code>minimal-contact-form.css</code>. Here are some examples:</p>
+    <ul>
+        <li><strong>Label Text Color:</strong> Modify the <code>color</code> property of the <code>label</code> rule.
+            <pre><code lang="css">
+label {
+    color: #444; /* Default color */
+    /* To change the color to a darker shade: */
+    /* color: #222; */
+}
+            </code></pre>
+        </li>
+        <li><strong>Input Field Border Color:</strong> Modify the <code>border-color</code> property in the rules for <code>input[type="text"]</code>, <code>input[type="email"]</code>, and <code>textarea</code>.
+            <pre><code lang="css">
+input[type="text"],
+input[type="email"],
+textarea {
+    border: 1px solid #ccc; /* Default gray border */
+    /* For a light blue border: */
+    /* border-color: #add8e6; */
+}
+            </code></pre>
+        </li>
+        <li><strong>Button Background Color:</strong> Modify the <code>background-color</code> property of the rule for <code>button[type="submit"]</code>.
+            <pre><code lang="css">
+button[type="submit"] {
+    background-color: #007bff; /* Default blue */
+    /* For a green button: */
+    /* background-color: #28a745; */
+}
+            </code></pre>
+        </li>
+        <li><strong>Button Text Color:</strong> Modify the <code>color</code> property in the rule for <code>button[type="submit"]</code>. The default is <code>white</code>.
+            <pre><code lang="css">
+button[type="submit"] {
+    color: white; /* Default white */
+    /* For black text (if the background is light): */
+    /* color: #000; */
+}
+            </code></pre>
+        </li>
+        <li><strong>Input Focus Color:</strong> Modify the <code>border-color</code> and <code>box-shadow</code> in the rules for <code>input:focus</code> and <code>textarea:focus</code>.
+            <pre><code lang="css">
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #007bff; /* Default blue focus */
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Subtle blue focus shadow */
+    /* For a green focus: */
+    /* border-color: #28a745; */
+    /* box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25); */
+}
+            </code></pre>
+        </li>
+    </ul>
+
+    <h3>Typography</h3>
+    <p>To adjust the font used in the form, modify the <code>font-family</code> property in the CSS rules for <code>label</code>, <code>input</code>, <code>textarea</code>, and <code>button</code>. You can also integrate Google Fonts by adding the <code>&lt;link&gt;</code> tag in the <code>&lt;head&gt;</code> of your HTML file and then referencing the font family in your CSS.</p>
+    <pre><code lang="html">
+&lt;head&gt;
+    &lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;
+    &lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;
+    &lt;link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"&gt;
+&lt;/head&gt;
+    </code></pre>
+    <pre><code lang="css">
+body { /* Or a more specific selector */
+    font-family: 'Roboto', sans-serif;
+}
+    </code></pre>
+
+    <h3>Size and Spacing</h3>
+    <p>You can adjust the size and spacing of the form elements by modifying properties like <code>width</code>, <code>padding</code>, and <code>margin</code> in the CSS rules for the respective elements (<code>.contact-form</code>, <code>.form-group</code>, <code>input</code>, <code>textarea</code>, <code>button</code>). For example, to make the form wider:</p>
+    <pre><code lang="css">
+.contact-form {
+    max-width: 600px; /* Default is 400px */
+}
+    </code></pre>
+    <p>Similarly, you can adjust the padding inside the input fields:</p>
+    <pre><code lang="css">
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 1rem; /* Default is 0.8rem */
+}
+    </code></pre>
+
+    <h3>Displaying/Hiding Optional Fields</h3>
+    <p>The current Minimal Contact Form includes the "Name", "Email", and "Message" fields as required. If you were to add optional fields (like "Subject" or "Phone" from other styles), you can control their visibility using the <code>.d-none</code> utility class provided in the <code>common.css</code> file. To hide an optional field, add the <code>.d-none</code> class to the <code>.form-group</code> of that field in your HTML:</p>
+    <pre><code lang="html">
+&lt;div class="form-group d-none"&gt;
+    &lt;label for="subject"&gt;Subject:&lt;/label&gt;
+    &lt;input type="text" id="subject" name="subject" placeholder="Subject"&gt;
+&lt;/div&gt;
+    </code></pre>
+    <p>Make sure to link the <code>common.css</code> file in the <code>&lt;head&gt;</code> section of your HTML file, alongside the <code>minimal-contact-form.css</code> file:</p>
+    <pre><code lang="html">
+&lt;head&gt;
+    &lt;link rel="stylesheet" href="path/to/minimal-contact-form.css"&gt;
+    &lt;link rel="stylesheet" href="path/to/common.css"&gt;
+&lt;/head&gt;
+    </code></pre>
+    <p>To show the field again, simply remove the <code>.d-none</code> class from the <code>.form-group</code>.</p>
+
+    <h3>Text Customization</h3>
+    <p>The text for the labels (e.g., "Name:", "Email:", "Message:") and the submit button ("Send Message") can be directly changed within the <code>contact-form-minimal.html</code> file by editing the text content of the <code>&lt;label&gt;</code> and <code>&lt;button&gt;</code> elements.</p>
+
+    <h3>Backend Integration</h3>
+    <p><strong>Important:</strong> This contact form provides the front-end structure and client-side validation only. To handle the form submission (sending emails, storing data), you will need to integrate a backend solution using a server-side language (like PHP, Node.js, Python) or a third-party service (like Formspree, Netlify Forms).</p>
+
+    <h3>Internationalization (Translation)</h3>
+    <p>To translate the form labels and any potential JavaScript error messages, you will need to modify the text content directly in the <code>minimal-contact-form.html</code> file for the labels and in the <code>minimal-contact-form.js</code> file for the error messages.</p>
+
+    <h3>Accessibility</h3>
+    <p>This contact form is designed with accessibility in mind:</p>
+    <ul>
+        <li>Proper use of <code>&lt;label&gt;</code> elements associated with their respective inputs using the <code>for</code> attribute.</li>
+        <li>Use of <code>aria-required="true"</code> for required fields.</li>
+        <li>Sufficient color contrast for readability.</li>
+        <li>Clear focus styles for keyboard navigation (provided in the CSS).</li>
+    </ul>
+
+    <h3>Performance</h3>
+    <p>The form is lightweight and optimized for performance with minimal CSS and JavaScript.</p>
+
+    <h3>Support</h3>
+    <p>For any questions or issues, please refer to the ThemeForest support section for this item.</p>
+
+    <p>Thank you again for your purchase!</p>
+</body>
+</html>

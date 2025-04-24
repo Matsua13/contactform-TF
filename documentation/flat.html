@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flat Contact Form - Documentation</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; margin: 2rem; }
+        h1, h2, h3 { color: #333; }
+        h1 { border-bottom: 2px solid #ccc; padding-bottom: 0.5rem; }
+        h2 { margin-top: 1.5rem; }
+        pre { background-color: #f4f4f4; padding: 1rem; border-radius: 5px; overflow-x: auto; }
+        code { font-family: monospace; }
+        ul { list-style-type: disc; margin-left: 2rem; }
+        strong { font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>Flat Contact Form - Documentation</h1>
+
+    <h2>Introduction</h2>
+    <p>Thank you for purchasing the Flat Contact Form! This document will guide you through the installation and usage of this clean, colorful, and modern contact form.</p>
+
+    <h2>File Structure</h2>
+    <pre><code>
+contactform-TF/
+└── documentation/
+    ├── index.html
+    ├── flat.html
+    ├── minimal.html
+    ├── modern.html
+    ├── retro.html
+    ├── sophisticated.html
+└── preview/
+    ├── <screenshot-1 class="png"></screenshot-1>
+    └── <screenshot-2 class="png"></screenshot-2>
+├── common.css
+├── contact-form-flat.html
+├── contact-form-flat.css
+├── contact-form-flat.js
+├── contact-form-minimal.html
+├── contact-form-minimal.css
+├── contact-form-minimal.js
+├── contact-form-modern.html
+├── contact-form-modern.css
+├── contact-form-modern.js
+├── contact-form-retro.html
+├── contact-form-retro.css
+├── contact-form-retro.js
+├── contact-form-sophisticated.html
+├── contact-form-sophisticated.css
+├── contact-form-sophitiscated.js
+├── README.txt
+    </code></pre>
+
+    <h2>Installation</h2>
+    <p>To install the Flat Contact Form, simply include the <code>contact-form-flat.html</code>, <code>contact-form-flat.css</code>, and <code>contact-form-flat.js</code> files in your HTML project.</p>
+
+    <h2>Usage</h2>
+    <h3>Basic Integration</h3>
+    <p>Copy the HTML code from <code>contact-form-flat.html</code> into the desired location in your website's HTML structure. Make sure to link the <code>contact-form-flat.css</code> file in the <code>&lt;head&gt;</code> section and include the <code>contact-form-flat.js</code> file before the closing <code>&lt;body&gt;</code> tag.</p>
+    <pre><code lang="html">
+&lt;head&gt;
+    &lt;link rel="stylesheet" href="path/to/contact-form-flat.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- Your content --&gt;
+    &lt;form class="contact-form flat" action="#" method="POST" novalidate&gt;
+        &lt;div class="form-group"&gt;
+            &lt;label for="name-flat"&gt;Name:&lt;/label&gt;
+            &lt;input type="text" id="name-flat" name="name" required aria-required="true" placeholder="Your name"&gt;
+            &lt;span class="validation-icon success"&gt;&lt;svg ...&gt;&lt;/svg&gt;&lt;/span&gt;
+            &lt;span class="validation-icon error"&gt;&lt;svg ...&gt;&lt;/svg&gt;&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class="form-group"&gt;
+            &lt;label for="email-flat"&gt;Email:&lt;/label&gt;
+            &lt;input type="email" id="email-flat" name="email" required aria-required="true" placeholder="Your email"&gt;
+            &lt;span class="validation-icon success"&gt;&lt;svg ...&gt;&lt;/svg&gt;&lt;/span&gt;
+            &lt;span class="validation-icon error"&gt;&lt;svg ...&gt;&lt;/svg&gt;&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class="form-group"&gt;
+            &lt;label for="message-flat"&gt;Message:&lt;/label&gt;
+            &lt;textarea id="message-flat" name="message" rows="5" required aria-required="true" placeholder="Your message"&gt;&lt;/textarea&gt;
+            &lt;span class="validation-icon success"&gt;&lt;svg ...&gt;&lt;/svg&gt;&lt;/span&gt;
+            &lt;span class="validation-icon error"&gt;&lt;svg ...&gt;&lt;/svg&gt;&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;button type="submit"&gt;Send Message&lt;/button&gt;
+    &lt;/form&gt;
+
+    &lt;script src="path/to/contact-form-flat.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+    </code></pre>
+
+    <h2>Customization</h2>
+    <p>The Flat Contact Form features a clean, colorful, and modern design. You can easily customize its appearance by modifying the CSS rules in the <code>contact-form-flat.css</code> file. Here's how to adjust key visual elements:</p>
+
+    <h3>Colors</h3>
+    <p>Modify the following CSS properties to personalize the color scheme of the form:</p>
+    <ul>
+        <li><strong>Form Background Color:</strong> Change the <code>background-color</code> property of the <code>.contact-form.flat</code> class.
+            <pre><code lang="css">
+.contact-form.flat {
+    background-color: #f0f0f0; /* Default light gray */
+    /* For a light blue background: */
+    /* background-color: #e3f2fd; */
+}
+            </code></pre>
+        </li>
+        <li><strong>Label Text Color:</strong> Adjust the <code>color</code> property of the <code>.contact-form.flat label</code> rule.
+            <pre><code lang="css">
+.contact-form.flat label {
+    color: #555; /* Default medium gray */
+    /* For a dark blue label text: */
+    /* color: #1565c0; */
+}
+            </code></pre>
+        </li>
+        <li><strong>Input Field Background Color:</strong> Modify the <code>background-color</code> property in the rules for <code>.contact-form.flat input[type="text"]</code>, <code>.contact-form.flat input[type="email"]</code>, <code>.contact-form.flat input[type="tel"]</code>, and <code>.contact-form.flat textarea</code>.
+            <pre><code lang="css">
+.contact-form.flat input[type="text"],
+.contact-form.flat input[type="email"],
+.contact-form.flat input[type="tel"],
+.contact-form.flat textarea {
+    background-color: #fff; /* Default white */
+    /* For a very light gray input background: */
+    /* background-color: #f5f5f5; */
+}
+            </code></pre>
+        </li>
+        <li><strong>Input Focus Background Color:</strong> Change the <code>background-color</code> of the <code>.contact-form.flat input:focus</code> and <code>.contact-form.flat textarea:focus</code> rules.
+            <pre><code lang="css">
+.contact-form.flat input:focus,
+.contact-form.flat textarea:focus {
+    background-color: #e0f7fa; /* Default light blue */
+    /* For a light green focus: */
+    /* background-color: #e8f5e9; */
+}
+            </code></pre>
+        </li>
+        <li><strong>Button Background Color:</strong> Modify the <code>background-color</code> of the <code>.contact-form.flat button[type="submit"]</code> rule.
+            <pre><code lang="css">
+.contact-form.flat button[type="submit"] {
+    background-color: #2196f3; /* Default vibrant blue */
+    /* For a vibrant green button: */
+    /* background-color: #4caf50; */
+}
+            </code></pre>
+        </li>
+        <li><strong>Button Text Color:</strong> Adjust the <code>color</code> property in the <code>.contact-form.flat button[type="submit"]</code> rule. The default is <code>white</code>.
+            <pre><code lang="css">
+.contact-form.flat button[type="submit"] {
+    color: white; /* Default white */
+    /* For dark text on a light button: */
+    /* color: #333; */
+}
+            </code></pre>
+        </li>
+        <li><strong>Button Hover Background Color:</strong> Change the <code>background-color</code> in the <code>.contact-form.flat button[type="submit"]:hover</code> rule.
+            <pre><code lang="css">
+.contact-form.flat button[type="submit"]:hover {
+    background-color: #1976d2; /* Default darker blue */
+    /* For a darker green hover: */
+    /* background-color: #388e3c; */
+}
+            </code></pre>
+        </li>
+        <li><strong>Validation Icons:</strong> Modify the <code>color</code> property of the <code>.contact-form.flat .validation-icon.success</code> (default: <code>green</code>) and <code>.contact-form.flat .validation-icon.error</code> (default: <code>red</code>) rules.
+            <pre><code lang="css">
+.contact-form.flat .validation-icon.success {
+    color: green; /* Default green */
+    /* For a different success color: */
+    /* color: #66bb6a; */
+}
+
+.contact-form.flat .validation-icon.error {
+    color: red; /* Default red */
+    /* For a different error color: */
+    /* color: #e57373; */
+}
+            </code></pre>
+        </li>
+        <li><strong>Invalid Field Background and Border:</strong> Adjust the <code>background-color</code> and <code>border-left-color</code> of the <code>.contact-form.flat input.is-invalid</code> and <code>.contact-form.flat textarea.is-invalid</code> rules.
+            <pre><code lang="css">
+.contact-form.flat input.is-invalid,
+.contact-form.flat textarea.is-invalid {
+    background-color: #ffebee; /* Default light pink */
+    border-left: 3px solid #f44336; /* Default red left border */
+    /* For a light yellow background and dark yellow border: */
+    /* background-color: #fffde7; */
+    /* border-left-color: #fbc02d; */
+}
+            </code></pre>
+        </li>
+        <li><strong>Error Message Text:</strong> Change the <code>color</code> property of the <code>.contact-form.flat .error-message</code> rule.
+            <pre><code lang="css">
+.contact-form.flat .error-message {
+    color: #f44336; /* Default red */
+    /* For an orange error message: */
+    /* color: #ff9800; */
+}
+            </code></pre>
+        </li>
+    </ul>
+
+    <h3>Typography</h3>
+    <p>To customize the font used in the form, modify the <code>font-family</code> property in the CSS rules for <code>.contact-form.flat label</code>, <code>.contact-form.flat input</code>, <code>.contact-form.flat textarea</code>, and <code>.contact-form.flat button</code>. Refer to the "Typography" section in the Minimal style documentation for instructions on integrating Google Fonts.</p>
+
+    <h3>Size and Spacing</h3>
+    <p>Adjust the size and spacing of the form elements by modifying properties like <code>max-width</code>, <code>padding</code>, and <code>margin</code> in the CSS rules for the respective elements (<code>.contact-form.flat</code>, <code>.contact-form.flat .form-group</code>, <code>.contact-form.flat input</code>, <code>.contact-form.flat textarea</code>, <code>.contact-form.flat button</code>). The principles are similar to those described in the Minimal style documentation.</p>
+
+    <h3>Displaying/Hiding Optional Fields</h3>
+    <p>As with the other styles, you can use the <code>.d-none</code> utility class from <code>common.css</code> to hide optional fields by adding it to the <code>.form-group</code> of the field in your HTML. Ensure that <code>common.css</code> is linked in the <code>&lt;head&gt;</code> of your HTML file.</p>
+
+    <h3>Text Customization</h3>
+    <p>The text for the labels and the submit button can be directly changed within the <code>contact-form-flat.html</code> file by editing the text content of the <code>&lt;label&gt;</code> and <code>&lt;button&gt;</code> elements.</p>
+
+    <h2>Backend Integration</h2>
+    <p><strong>Important:</strong> This contact form provides the front-end structure and client-side validation only. To handle the form submission (sending emails, storing data), you will need to integrate a backend solution using a server-side language (like PHP, Node.js, Python) or a third-party service (like Formspree, Netlify Forms).</p>
+
+    <h3>Using a Backend Language (Example: PHP)</h3>
+    <p>You would typically create a PHP script to handle the form submission when the user clicks "Send Message". The <code>action</code> attribute of the <code>&lt;form&gt;</code> tag would point to this PHP script.</p>
+    <pre><code lang="html">
+&lt;form class="contact-form flat" action="process_form.php" method="POST" novalidate&gt;
+    &lt;!-- ... form fields ... --&gt;
+    &lt;button type="submit"&gt;Send Message&lt;/button&gt;
+&lt;/form&gt;
+    </code></pre>
+    <p>Your <code>process_form.php</code> file would then handle the data submitted via the <code>$_POST</code> superglobal, perform server-side validation, and send the email.</p>
+
+    <h3>Using a Third-Party Service (Example: Formspree)</h3>
+    <p><a href="https://formspree.io/" target="_blank">Formspree</a> is a service that allows you to receive emails from your HTML forms without writing any backend code.</p>
+    <ol>
+        <li>Sign up for a free account on Formspree.</li>
+        <li>Create a new form on your Formspree dashboard.</li>
+        <li>Formspree will provide you with a form endpoint URL. Update the <code>action</code> attribute of your HTML form with this URL.</li>
+    </ol>
+    <pre><code lang="html">
+&lt;form class="contact-form flat" action="https://formspree.io/f/your_form_endpoint" method="POST" novalidate&gt;
+    &lt;!-- ... form fields ... --&gt;
+    &lt;button type="submit"&gt;Send Message&lt;/button&gt;
+&lt;/form&gt;
+    </code></pre>
+    <p>Formspree can also handle basic spam protection and email notifications.</p>
+
+    <h3>Security Considerations</h3>
+    <p>Remember that client-side validation (provided by the JavaScript) is for user convenience. You <strong>must</strong> implement server-side validation to protect your website from malicious input and ensure data integrity.</p>
+
+    <h2>Internationalization (Translation)</h2>
+    <p>To translate the form labels and any potential JavaScript error messages, you will need to modify the text content directly in the <code>contact-form-flat.html</code> file for the labels and in the <code>contact-form-flat.js</code> file for the error messages.</p>
+
+    <h2>Accessibility</h2>
+    <p>This contact form is designed with accessibility in mind:</p>
+    <ul>
+        <li>Proper use of <code>&lt;label&gt;</code> elements associated with their respective inputs using the <code>for</code> attribute.</li>
+        <li>Use of <code>aria-required="true"</code> for required fields.</li>
+        <li>Sufficient color contrast for readability.</li>
+        <li>Clear focus styles for keyboard navigation (provided in the CSS).</li>
+    </ul>
+
+    <h2>Performance</h2>
+    <p>The form is lightweight and optimized for performance with minimal CSS and JavaScript.</p>
+
+    <h2>Support</h2>
+    <p>For any questions or issues, please refer to the ThemeForest support section for this item.</p>
+
+    <p>Thank you again for your purchase!</p>
+</body>
+</html>
