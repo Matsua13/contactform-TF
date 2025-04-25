@@ -1,16 +1,16 @@
-/* Styles pour le formulaire sophistiqué avec des accents plus marqués */
+/* Styles for the sophisticated form with more pronounced accents */
 .contact-form.sophisticated {
     max-width: 420px;
     margin: 2rem auto;
-    padding: 3rem; /* Augmentation du padding pour un aspect plus aéré */
-    background-color: #f8f8f8; /* Fond légèrement plus clair */
-    border: none; /* Suppression de la bordure */
-    border-radius: 12px; /* Bords plus arrondis pour une sensation douce */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Ombre plus prononcée pour la profondeur */
+    padding: 3rem; /* Increased padding for a more airy look */
+    background-color: #f8f8f8; /* Slightly lighter background */
+    border: none; /* Removed border */
+    border-radius: 12px; /* More rounded edges for a soft feel */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* More pronounced shadow for depth */
 }
 
 .contact-form.sophisticated .form-group {
-    margin-bottom: 2.2rem; /* Ajustement de la marge */
+    margin-bottom: 2.2rem; /* Adjusted margin */
     position: relative;
 }
 
@@ -18,7 +18,7 @@
     display: block;
     margin-bottom: 0.7rem;
     font-weight: 500;
-    color: #555; /* Couleur de texte un peu plus claire */
+    color: #555; /* Slightly lighter text color */
 }
 
 .contact-form.sophisticated input[type="text"],
@@ -27,13 +27,13 @@
 .contact-form.sophisticated textarea {
     display: block;
     width: 100%;
-    padding: 1rem; /* Augmentation du padding */
+    padding: 1rem; /* Increased padding */
     border: 1px solid #ddd;
-    border-radius: 6px; /* Bords légèrement plus arrondis */
+    border-radius: 6px; /* Slightly more rounded edges */
     font-size: 1rem;
     line-height: 1.6;
     box-sizing: border-box;
-    background-color: #fff; /* Fond blanc pour les champs */
+    background-color: #fff; /* White background for fields */
     transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
@@ -41,7 +41,7 @@
 .contact-form.sophisticated textarea:focus {
     outline: none;
     border-color: #aaa;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.15); /* Ombre plus présente au focus */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.15); /* More pronounced shadow on focus */
 }
 
 .contact-form.sophisticated textarea {
@@ -49,7 +49,7 @@
 }
 
 .contact-form.sophisticated button[type="submit"] {
-    background-color: #22a030; /* Couleur verte sophistiquée */
+    background-color: #22a030; /* Sophisticated green color */
     color: white;
     padding: 1rem 2rem;
     border: none;
@@ -61,45 +61,45 @@
 }
 
 .contact-form.sophisticated button[type="submit"]:hover {
-    background-color: #1e842c; /* Vert légèrement plus foncé au survol */
+    background-color: #1e842c; /* Slightly darker green on hover */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
     transform: translateY(-2px);
 }
 
 .contact-form.sophisticated button[type="submit"]:focus {
     outline: none;
-    box-shadow: 0 0 0 0.2rem rgba(103, 58, 183, 0.5); /* Ombre de focus violette */
+    box-shadow: 0 0 0 0.2rem rgba(103, 58, 183, 0.5); /* Purple focus shadow */
 }
 
-/* Icônes de validation */
+/* Validation icons */
 .contact-form.sophisticated .validation-icon {
     position: absolute;
     top: 50%;
-    right: 15px; /* Légèrement plus à droite */
+    right: 15px; /* Slightly more to the right */
     transform: translateY(-50%);
     opacity: 0;
     pointer-events: none;
-    font-size: 1.2rem; /* Icônes un peu plus grandes */
+    font-size: 1.2rem; /* Slightly larger icons */
 }
 
 .contact-form.sophisticated .validation-icon.success {
-    color: #4caf50; /* Vert plus affirmé */
+    color: #4caf50; /* More assertive green */
 }
 
 .contact-form.sophisticated .validation-icon.error {
-    color: #f44336; /* Rouge plus affirmé */
+    color: #f44336; /* More assertive red */
 }
 
-/* Style pour les champs invalides */
+/* Style for invalid fields */
 .contact-form.sophisticated input.is-invalid,
 .contact-form.sophisticated textarea.is-invalid {
     border-color: #f44336;
-    box-shadow: 0 0 5px rgba(244, 67, 54, 0.4); /* Ombre rouge plus visible */
+    box-shadow: 0 0 5px rgba(244, 67, 54, 0.4); /* More visible red shadow */
 }
 
-/* Style pour les messages d'erreur */
+/* Style for error messages */
 .contact-form.sophisticated .error-message {
     color: #f44336;
     font-size: 0.9rem;
-    margin-top: 0.3rem; /* Légère augmentation de la marge */
+    margin-top: 0.3rem; /* Slight increase in margin */
 }

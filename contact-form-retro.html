@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Retro Game Contact Form</title>
     <meta name="description" content="Retro old school game (Street Fighter inspired) contact form, accessible and performant.">
-    <link rel="stylesheet" href="contact-form-retro.css" id="theme-stylesheet">
+    <link rel="stylesheet" href="contact-form-retro.min.css" id="theme-stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
     <style>
-        /* Styles pour le sélecteur de thème */
+        /* Styles for the theme selector */
         .theme-selector-container {
             margin-bottom: 1rem;
             text-align: center;
@@ -65,12 +65,12 @@
 
         themeSelect.addEventListener('change', function() {
             const selectedTheme = this.value;
-            let themeUrl = 'contact-form-retro.css'; // Chemin par défaut
+            let themeUrl = 'contact-form-retro.min.css'; // Default path
 
             if (selectedTheme === 'futuristic') {
-                themeUrl = 'contact-form-retro-futuriste.css';
+                themeUrl = 'contact-form-retro-futuriste.min.css';
             }
-            // Ajouter d'autres conditions 'else if' pour d'autres thèmes si nécessaire
+            // You can add other ‘else if’ conditions here for other themes
 
             themeStylesheet.setAttribute('href', themeUrl);
             localStorage.setItem('retro-theme', selectedTheme);
@@ -80,9 +80,9 @@
             const savedTheme = localStorage.getItem('retro-theme');
             if (savedTheme) {
                 themeSelect.value = savedTheme;
-                let themeUrl = 'contact-form-retro.css';
+                let themeUrl = 'contact-form-retro.min.css';
                 if (savedTheme === 'futuristic') {
-                    themeUrl = 'contact-form-retro-futuriste.css';
+                    themeUrl = 'contact-form-retro-futuriste.min.css';
                 }
                 themeStylesheet.setAttribute('href', themeUrl);
             }

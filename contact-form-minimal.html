@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minimal Contact Form</title>
     <meta name="description" content="Minimal, accessible, and performant contact form.">
-    <link rel="stylesheet" href="contact-form-minimal.css" id="theme-stylesheet">
+    <link rel="stylesheet" href="contact-form-minimal.min.css" id="theme-stylesheet">
     <style>
-        /* Styles pour le sélecteur de thème */
+        /* Styles for the theme selector */
         .theme-selector-container {
             margin-bottom: 1rem;
             text-align: center;
@@ -57,12 +57,12 @@
 
         themeSelect.addEventListener('change', function() {
             const selectedTheme = this.value;
-            let themeUrl = 'contact-form-minimal.css'; // Chemin par défaut
+            let themeUrl = 'contact-form-minimal.min.css'; // Default path
 
             if (selectedTheme === 'dark') {
-                themeUrl = 'contact-form-minimal-dark.css';
+                themeUrl = 'contact-form-minimal-dark.min.css';
             }
-            // Ajouter d'autres conditions 'else if' pour d'autres thèmes
+            // You can add other ‘else if’ conditions here for other themes
 
             themeStylesheet.setAttribute('href', themeUrl);
             localStorage.setItem('minimal-theme', selectedTheme);
@@ -72,9 +72,9 @@
             const savedTheme = localStorage.getItem('minimal-theme');
             if (savedTheme) {
                 themeSelect.value = savedTheme;
-                let themeUrl = 'contact-form-minimal.css';
+                let themeUrl = 'contact-form-minimal.min.css';
                 if (savedTheme === 'dark') {
-                    themeUrl = 'contact-form-minimal-dark.css';
+                    themeUrl = 'contact-form-minimal-dark.min.css';
                 }
                 themeStylesheet.setAttribute('href', themeUrl);
             }

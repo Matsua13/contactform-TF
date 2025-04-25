@@ -1,9 +1,9 @@
-/* Thème sombre alternatif basé sur le style Flat coloré */
+/* Alternative dark theme based on the colored Flat style */
 .contact-form.flat {
     max-width: 400px;
     margin: 2rem auto;
     padding: 2rem;
-    background-color: #333; /* Fond gris clair -> Fond sombre */
+    background-color: #333; /* Light gray background -> Dark background */
     border-radius: 5px;
 }
 
@@ -16,7 +16,7 @@
     display: block;
     margin-bottom: 0.5rem;
     font-weight: bold;
-    color: #ddd; /* #555 -> Texte plus clair */
+    color: #ddd; /* #555 -> Lighter text */
 }
 
 .contact-form.flat input[type="text"],
@@ -26,21 +26,21 @@
     display: block;
     width: 100%;
     padding: 0.75rem;
-    border: none; /* Pas de bordure */
+    border: none; /* No border */
     border-radius: 3px;
     font-size: 1rem;
     line-height: 1.5;
     box-sizing: border-box;
-    background-color: #444; /* #fff -> Fond plus sombre pour les champs */
-    color: #eee; /* Ajout de couleur de texte claire */
+    background-color: #444; /* #fff -> Darker background for fields */
+    color: #eee; /* Add light text color */
     transition: background-color 0.2s ease-in-out;
 }
 
 .contact-form.flat input:focus,
 .contact-form.flat textarea:focus {
     outline: none;
-    background-color: #555; /* #e0f7fa -> Fond légèrement plus clair au focus */
-    color: #eee; /* Garder le texte clair au focus */
+    background-color: #555; /* #e0f7fa -> Slightly lighter background on focus */
+    color: #eee; /* Keep light text on focus */
 }
 
 .contact-form.flat textarea {
@@ -48,8 +48,8 @@
 }
 
 .contact-form.flat button[type="submit"] {
-    background-color: #1e88e5; /* #2196f3 -> Bleu plus foncé */
-    color: #fff; /* white -> Garder le texte blanc */
+    background-color: #1e88e5; /* #2196f3 -> Darker blue */
+    color: #fff; /* white -> Keep text white */
     padding: 0.75rem 1.5rem;
     border: none;
     border-radius: 5px;
@@ -59,10 +59,10 @@
 }
 
 .contact-form.flat button[type="submit"]:hover {
-    background-color: #1565c0; /* #1976d2 -> Bleu encore plus foncé au survol */
+    background-color: #1565c0; /* #1976d2 -> Even darker blue on hover */
 }
 
-/* Icônes de validation */
+/* Validation icons */
 .contact-form.flat .validation-icon {
     position: absolute;
     top: 50%;
@@ -73,24 +73,24 @@
 }
 
 .contact-form.flat .validation-icon.success {
-    color: #81c784; /* green -> Vert plus clair */
+    color: #81c784; /* green -> Lighter green */
 }
 
 .contact-form.flat .validation-icon.error {
-    color: #e57373; /* red -> Rouge plus clair */
+    color: #e57373; /* red -> Lighter red */
 }
 
-/* Style pour les champs invalides */
+/* Style for invalid fields */
 .contact-form.flat input.is-invalid,
 .contact-form.flat textarea.is-invalid {
-    background-color: #555; /* #ffebee -> Fond sombre en cas d'erreur */
-    border-left-color: #f44336; /* #f44336 -> Garder la bordure rouge */
-    color: #eee; /* Ajout de couleur de texte claire */
+    background-color: #555; /* #ffebee -> Dark background in case of error */
+    border-left-color: #f44336; /* #f44336 -> Keep red border */
+    color: #eee; /* Add light text color */
 }
 
-/* Style pour les messages d'erreur */
+/* Style for error messages */
 .contact-form.flat .error-message {
-    color: #f44336; /* #f44336 -> Garder la couleur rouge */
+    color: #f44336; /* #f44336 -> Keep red color */
     font-size: 0.9rem;
     margin-top: 0.25rem;
 }

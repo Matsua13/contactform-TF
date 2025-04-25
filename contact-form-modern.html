@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modern Contact Form</title>
     <meta name="description" content="Modern contact form with subtle animations, accessible and performant.">
-    <link rel="stylesheet" href="contact-form-modern.css" id="theme-stylesheet">
+    <link rel="stylesheet" href="contact-form-modern.min.css" id="theme-stylesheet">
     <style>
-        /* Styles pour le sélecteur de thème */
+        /* Styles for the theme selector */
         .theme-selector-container {
             margin-bottom: 1rem;
             text-align: center;
@@ -77,12 +77,12 @@
 
         themeSelect.addEventListener('change', function() {
             const selectedTheme = this.value;
-            let themeUrl = 'contact-form-modern.css'; // Chemin par défaut
+            let themeUrl = 'contact-form-modern.min.css'; // Default path
 
             if (selectedTheme === 'dark') {
-                themeUrl = 'contact-form-modern-dark.css';
+                themeUrl = 'contact-form-modern-dark.min.css';
             }
-            // Ajouter d'autres conditions 'else if' pour d'autres thèmes
+            // You can add other ‘else if’ conditions here for other themes
 
             themeStylesheet.setAttribute('href', themeUrl);
             localStorage.setItem('modern-theme', selectedTheme);
@@ -92,9 +92,9 @@
             const savedTheme = localStorage.getItem('modern-theme');
             if (savedTheme) {
                 themeSelect.value = savedTheme;
-                let themeUrl = 'contact-form-modern.css';
+                let themeUrl = 'contact-form-modern.min.css';
                 if (savedTheme === 'dark') {
-                    themeUrl = 'contact-form-modern-dark.css';
+                    themeUrl = 'contact-form-modern-dark.min.css';
                 }
                 themeStylesheet.setAttribute('href', themeUrl);
             }

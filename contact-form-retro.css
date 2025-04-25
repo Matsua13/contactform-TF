@@ -1,7 +1,7 @@
-/* Styles pour le formulaire rétro game (Street Fighter inspiré) */
+/* Styles for the retro game form (Street Fighter inspired) */
 body {
-    font-family: 'Press Start 2P', cursive; /* Police de caractères rétro - assurez-vous de l'inclure via <link> dans le <head> */
-    background-color: #222; /* Fond sombre comme une salle d'arcade */
+    font-family: 'Press Start 2P', cursive; /* Retro font - make sure to include via <link> in the <head> */
+    background-color: #222; /* Dark background like an arcade room */
     color: #eee;
     margin: 0;
     padding: 20px;
@@ -14,14 +14,14 @@ body {
 .retro-container {
     background-color: #333;
     padding: 30px;
-    border: 4px dashed #fdd835; /* Bordure jaune flashy */
+    border: 4px dashed #fdd835; /* Flashy yellow border */
     border-radius: 10px;
-    box-shadow: 4px 4px #000; /* Ombre noire épaisse */
+    box-shadow: 4px 4px #000; /* Thick black shadow */
 }
 
 .retro-title {
     font-size: 1.5rem;
-    color: #fdd835; /* Titre jaune */
+    color: #fdd835; /* Yellow title */
     text-align: center;
     margin-bottom: 20px;
     text-shadow: 2px 2px #000;
@@ -41,7 +41,7 @@ body {
     display: block;
     margin-bottom: 0.5rem;
     font-size: 1rem;
-    color: #f44336; /* Labels rouges */
+    color: #f44336; /* Red labels */
     text-shadow: 1px 1px #000;
 }
 
@@ -64,7 +64,7 @@ body {
 .contact-form.retro input:focus,
 .contact-form.retro textarea:focus {
     outline: none;
-    border-color: #fdd835; /* Bordure jaune au focus */
+    border-color: #fdd835; /* Yellow border on focus */
     box-shadow: 2px 2px #000;
     background-color: #555;
 }
@@ -74,7 +74,7 @@ body {
 }
 
 .retro-button {
-    background-color: #4caf50; /* Bouton vert "Start" */
+    background-color: #4caf50; /* Green "Start" button */
     color: white;
     padding: 0.75rem 1.5rem;
     border: 2px solid #388e3c;
@@ -88,7 +88,7 @@ body {
 }
 
 .retro-button:hover {
-    background-color: #388e3c; /* Vert plus foncé au survol */
+    background-color: #388e3c; /* Darker green on hover */
     box-shadow: 3px 3px #000;
     transform: translateY(-2px);
 }
@@ -98,7 +98,7 @@ body {
     box-shadow: 0 0 0 0.2rem rgba(76, 175, 80, 0.5), 4px 4px #000;
 }
 
-/* Icônes de validation (adaptées pour le style) */
+/* Validation icons (adapted for the style) */
 .contact-form.retro .validation-icon {
     position: absolute;
     top: 50%;
@@ -111,21 +111,21 @@ body {
 }
 
 .contact-form.retro .validation-icon.success {
-    color: #fdd835; /* Jaune pour le succès */
+    color: #fdd835; /* Yellow for success */
 }
 
 .contact-form.retro .validation-icon.error {
-    color: #f44336; /* Rouge pour l'erreur */
+    color: #f44336; /* Red for error */
 }
 
-/* Style pour les champs invalides */
+/* Style for invalid fields */
 .contact-form.retro input.is-invalid,
 .contact-form.retro textarea.is-invalid {
     border-color: #f44336;
     background-color: #555;
 }
 
-/* Style pour les messages d'erreur */
+/* Style for error messages */
 .contact-form.retro .error-message {
     color: #f44336;
     font-size: 0.9rem;

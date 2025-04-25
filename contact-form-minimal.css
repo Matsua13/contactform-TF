@@ -1,63 +1,63 @@
-/* Base du formulaire */
+/* Form base */
 .contact-form {
     max-width: 400px;
     margin: 2rem auto;
-    padding: 2.5rem; /* Augmentation légère du padding */
-    background-color: #f9f9f9; /* Léger fond gris pour plus de contraste */
-    border: 1px solid #e0e0e0; /* Bordure plus claire et subtile */
-    border-radius: 8px; /* Bords plus arrondis pour une sensation plus douce */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Ombre légère pour un effet de profondeur subtil */
+    padding: 2.5rem; /* Slight increase in padding */
+    background-color: #f9f9f9; /* Light gray background for more contrast */
+    border: 1px solid #e0e0e0; /* Lighter and subtler border */
+    border-radius: 8px; /* More rounded corners for a softer feel */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Light shadow for a subtle depth effect */
 }
 
-/* Groupes de champs */
+/* Field groups */
 .form-group {
-    margin-bottom: 2rem; /* Augmentation de la marge pour plus d'espace */
+    margin-bottom: 2rem; /* Increased margin for more space */
 }
 
 /* Labels */
 label {
     display: block;
     margin-bottom: 0.6rem;
-    font-weight: 500; /* Police légèrement moins grasse pour un aspect plus élégant */
-    color: #444; /* Couleur de texte légèrement plus claire */
+    font-weight: 500; /* Slightly lighter font weight for a more elegant look */
+    color: #444; /* Slightly lighter text color */
 }
 
-/* Champs de texte (input et textarea) */
+/* Text fields (input and textarea) */
 input[type="text"],
 input[type="email"],
 textarea {
     display: block;
     width: 100%;
-    padding: 0.8rem; /* Léger ajustement du padding */
+    padding: 0.8rem; /* Slight adjustment to padding */
     border: 1px solid #ccc;
-    border-radius: 4px; /* Bords légèrement plus arrondis */
+    border-radius: 4px; /* Slightly more rounded corners */
     font-size: 1rem;
-    line-height: 1.6; /* Légère augmentation de la hauteur de ligne */
+    line-height: 1.6; /* Slight increase in line height */
     box-sizing: border-box;
-    transition: border-color 0.2s ease-in-out; /* Transition pour l'effet de focus */
+    transition: border-color 0.2s ease-in-out; /* Transition for focus effect */
 }
 
 input[type="text"]:focus,
 input[type="email"]:focus,
 textarea:focus {
-    outline: none; /* Supprime la bordure de focus par défaut du navigateur */
-    border-color: #007bff; /* Couleur de focus élégante */
-    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Ombre de focus subtile */
+    outline: none; /* Removes the default browser focus border */
+    border-color: #007bff; /* Elegant focus color */
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Subtle focus shadow */
 }
 
-/* Style spécifique pour le textarea */
+/* Specific style for textarea */
 textarea {
     resize: vertical;
 }
 
-/* Bouton d'envoi */
+/* Submit button */
 button[type="submit"] {
     background-color: #007bff;
     color: white;
-    padding: 0.8rem 1.6rem; /* Léger ajustement du padding */
+    padding: 0.8rem 1.6rem; /* Slight adjustment to padding */
     border: none;
-    border-radius: 6px; /* Bords légèrement plus arrondis */
-    font-size: 1.05rem; /* Légère augmentation de la taille de la police */
+    border-radius: 6px; /* Slightly more rounded corners */
+    font-size: 1.05rem; /* Slight increase in font size */
     cursor: pointer;
     transition: background-color 0.2s ease-in-out;
 }
@@ -68,18 +68,18 @@ button[type="submit"]:hover {
 
 button[type="submit"]:focus {
     outline: none;
-    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5); /* Ombre de focus pour le bouton */
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5); /* Focus shadow for the button */
 }
 
-/* Style pour les champs invalides */
+/* Style for invalid fields */
 input.is-invalid,
 textarea.is-invalid {
-    border-color: #dc3545; /* Couleur rouge pour indiquer une erreur */
+    border-color: #dc3545; /* Red color to indicate an error */
 }
 
-/* Style pour les messages d'erreur */
+/* Style for error messages */
 .error-message {
-    color: #dc3545; /* Texte rouge pour les erreurs */
-    font-size: 0.9rem; /* Taille de police plus petite */
-    margin-top: 0.25rem; /* Légère marge au-dessus du message */
+    color: #dc3545; /* Red text for errors */
+    font-size: 0.9rem; /* Smaller font size */
+    margin-top: 0.25rem; /* Slight margin above the message */
 }

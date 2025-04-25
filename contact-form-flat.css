@@ -1,9 +1,9 @@
-/* Styles pour le formulaire flat design coloré */
+/* Styles for the colored flat design form */
 .contact-form.flat {
     max-width: 400px;
     margin: 2rem auto;
     padding: 2rem;
-    background-color: #f0f0f0; /* Fond gris clair */
+    background-color: #f0f0f0; /* Light gray background */
     border-radius: 5px;
 }
 
@@ -26,19 +26,19 @@
     display: block;
     width: 100%;
     padding: 0.75rem;
-    border: none; /* Pas de bordure */
+    border: none; /* No border */
     border-radius: 3px;
     font-size: 1rem;
     line-height: 1.5;
     box-sizing: border-box;
-    background-color: #fff; /* Fond blanc pour les champs */
+    background-color: #fff; /* White background for fields */
     transition: background-color 0.2s ease-in-out;
 }
 
 .contact-form.flat input:focus,
 .contact-form.flat textarea:focus {
     outline: none;
-    background-color: #e0f7fa; /* Léger fond coloré au focus */
+    background-color: #e0f7fa; /* Light colored background on focus */
 }
 
 .contact-form.flat textarea {
@@ -46,7 +46,7 @@
 }
 
 .contact-form.flat button[type="submit"] {
-    background-color: #2196f3; /* Couleur bleue vive */
+    background-color: #2196f3; /* Vibrant blue color */
     color: white;
     padding: 0.75rem 1.5rem;
     border: none;
@@ -57,10 +57,10 @@
 }
 
 .contact-form.flat button[type="submit"]:hover {
-    background-color: #1976d2; /* Couleur bleue plus foncée au survol */
+    background-color: #1976d2; /* Darker blue color on hover */
 }
 
-/* Icônes de validation */
+/* Validation icons */
 .contact-form.flat .validation-icon {
     position: absolute;
     top: 50%;
@@ -78,14 +78,14 @@
     color: red;
 }
 
-/* Style pour les champs invalides */
+/* Style for invalid fields */
 .contact-form.flat input.is-invalid,
 .contact-form.flat textarea.is-invalid {
-    background-color: #ffebee; /* Fond rouge clair en cas d'erreur */
-    border-left: 3px solid #f44336; /* Bordure gauche rouge */
+    background-color: #ffebee; /* Light red background in case of error */
+    border-left: 3px solid #f44336; /* Red left border */
 }
 
-/* Style pour les messages d'erreur */
+/* Style for error messages */
 .contact-form.flat .error-message {
     color: #f44336;
     font-size: 0.9rem;

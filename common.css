@@ -1,5 +1,5 @@
-/* Classes utilitaires communes */
+/* Common utility classes */
 
 .d-none {
-    display: none !important; /* Utilisation de !important pour s'assurer qu'elle a la priorité */
+    display: none !important; /* Use of !important to ensure it has priority */
 }
